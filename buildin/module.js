@@ -16,8 +16,8 @@ module.exports = function(module) {
         get: function() { return module.i; }
       });
 		}catch (e){
-      module["loaded"] = function() { return module.l; };
-      module["id"] = function() { return module.i; };
+      module["loaded"] = module.l;
+      module["id"] = module.i;
 		}
 		module.webpackPolyfill = 1;
 	}
